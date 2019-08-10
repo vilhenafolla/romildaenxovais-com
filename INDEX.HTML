@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title> O Rinção de Romilda </title>
+    <meta name="viewport" content="width=device-with, initial-scale=1">
+    
+    <style>/*Este código daqui para baixo é CSS */
+        
+.container{
+    
+    display: grid;/*Comando que pede avisar ao navegador para se preparar para dividir a tela numa grande com linhas e colunas (no caso 3 linhas é 3 colunas)*/
+    
+    grid-template-areas: /* Da nome a regiões da tela, como divisão, em 9 célilas, com 3 linhas é 3 colunas */
+        'cabecalho cabecalho cabecalho'
+        'menu      conteudo   banner'
+        'rodape    rodape     rodape';
+    grid-template-columns: 15% 70% 15%; /*porcentegem que cada coluna ocupa na tela */
+ }
+    /*INICIO DO CODIGO QUE FIXA TAMANHO MINIMO PERMITIDO DA TELA EM 480px */
+        
+@media (max-width:480px){ /*Se sua tela tiver até 480px de largura esta linha avisa a seu navegador que o bloco do código a seguir inica a posição que as células deverão ser apresentadas, chamamos isso de "responsavilidade", se adequar como o tamanho da tela*/ 
+    
+.container{
+    grid-template-areas: 'cabecalho''conteudo''banner''rodape';
+    grid-template-columns: auto; 
+    text-align: center;  }
+    
+.menu {display: none; }    
+    } /* FIM DE CODIGO PARA TELAS DE ATE 380px */
+        
+.cabecalho{
+    background-color: #e0e06a;
+    background-image: url(Fondo%20Romilda.jpg);
+    grid-area: cabecalho;   
+    color:white;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 3px 3px #0f0101;/*USANDO CTR+E voçê tera acceso a paleta dos cores*/  
+      }
+      
+.menu{
+    background-color: coral;
+    background-image: url(Bandera-de-Brazil.jpg);
+    grid-area: menu;   } 
+        
+.conteudo{
+    background-color: indianred;
+    grid-area: conteudo;   }
+        
+.banner{
+    background-color: #ebeb2e;
+    grid-area: banner;    }
+        
+.rodape{
+    background-color: #51de26;
+    background-image: url(Bandera-de-Brazil.jpg);
+    grid-area: rodape;   }   
+        
+</style>
+    </head>
+    
+<body>
+    <div class="container">
+        
+        
+<header class="cabecalho"><div align="center">
+    
+    <h1>Ó RINCÃO de ROMILDA</h1> 
+    
+    <body background="Fondo Romilda.jpg"></body>
+</div></header>
+        
+        
+<nav class="menu"><div align="center">
+    <h1><u>Departamentos</u></h1>
+        
+        <div align="center"><h3>Lingerie</h3>
+            <a href="Lingerie.HTML">Elija sua Prenda</a>
+            
+        <div align="center"><br><br><h3>Perfumeria e Cosmética</h3>
+            <a href="Perfumeria e Cosmetica.HTML">Seleçãe</a>
+                   
+        <div align="center"><br><br><h3>Roupa</h3>
+            <a href="Roupa.HTML">Ela,Ele,Jovem,Infantil</a>                        
+            
+        <div align="center"><br><br><h3>Enxoval</h3>
+            <a href="Enxoval.HTML">Seleçõe Grupo</a>               
+            
+        <div align="center"><br><br><h3>Bordados</h3>
+             <a href="Bordados.HTML">Seleçõe Grupo</a>   
+            
+</div></div></div></div></div></div></nav>
+        
+ <selection class="conteudo"><div align="center">
+    <h1><u>Ultimas Novedades</u></h1>
+     
+    <h3><br>Lingerie</h3>
+     <a href="Lingerie.HTML">Click Aqui</a>
+     
+     <h3><br>Perfumeria e Cosmetica</h3>
+     <a href="Perfumeria e Cosmetica.HTMl">Click Aqui</a>
+     
+     <h3><br>Roupa</h3>
+     <a href="Roupa.HTML">Click Aqui</a>
+     
+     <h3><br>Enxoval</h3>
+     <a href="Enxoval.HTML">Click Aqui</a>
+     
+     <h3><br>Bordados</h3>
+     <a href="Bordados.HTML">Click Aqui</a>
+     
+     </div></selection>
+        
+            
+        
+<aside class="banner"><div align="center">
+    <h1><u>Utilidades</u></h1>
+    
+    <div align="center"><h3>Cadastro</h3>
+        <a href="Cadastro.HTML">Click Aquí</a>
+        
+        <h3><br>Consultas</h3>
+          <a href="Consultas.HTML">Click Aquí</a>  
+        
+        <h3><br>Ideias</h3>
+            <a href="Ideias.HTML">Click Aquí</a>
+        
+        <h3><br>Fazer Pedido</h3>
+            <a href="Sugerencias.HTML">Click Aquí</a>
+        
+        
+    </div></div></aside>
+        
+<footer class="rodape"><div align="right">
+    <h3>Contato: romildapab@hotmail.com</h3>
+    <p>Fone:(69)98414-8698</p>
+    
+    <a href="index.HTML"><img width="20" heigt="20"  src="BotaoVoltar20x20.png" value="voltar" title="voltar" alt="botão_voltar" style="cursor:pointer" /></a>Menú Principal<br/><br/><br/>
+            
+</div></footer>
+          
+</div>
+    </body>
+</html>
